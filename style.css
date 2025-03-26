@@ -57,5 +57,13 @@ a:focus, a:active {
 .book {
     outline: none;
     border: none;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
+.book:hover {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
