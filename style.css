@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3eacb;
+}
+
+h1 {
+    color: #6b4226;
+}
+
+.shelf {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los libros pasen a otra línea si no caben */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-image: url("img/estanteria.jpg"); /* Imagen de la estantería */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.book {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* 💡 Efecto de inclinación al pasar el mouse */
+.book:hover {
+    transform: rotate(-10deg) scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 600px) {
+    .book {
+        width: 90px; /* Libros más pequeños en pantallas chicas */
+    }
+
+    .book:active { /* 📌 En móviles, los libros se inclinan al tocar */
+        transform: rotate(-10deg) scale(1.1);
+    }
+}
