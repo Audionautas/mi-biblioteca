@@ -44,7 +44,9 @@ h1 {
     .book:active { /* 📌 En móviles, los libros se inclinan al tocar */
         transform: rotate(-10deg) scale(1.1);
     }
-    
+        
+}
+
 /* Elimina el contorno en los enlaces */
 a:focus, a:active {
     outline: none;
@@ -57,5 +59,3 @@ a:focus, a:active {
     border: none;
 }
 
-    
-}
